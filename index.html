@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid de Nombres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #3b4a6b;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #9aa7ba;
+            border: 1px solid #b1b0b5;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #3b4a6b;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grid de Nombres</h1>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">Juan</div>
+            <div class="grid-item">María</div>
+            <div class="grid-item">Carlos</div>
+            <div class="grid-item">Ana</div>
+            <div class="grid-item">Luis</div>
+            <div class="grid-item">Sofía</div>
+            <div class="grid-item">Pedro</div>
+            <div class="grid-item">Laura</div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Mi Aplicación
+    </footer>
+</body>
+</html>
